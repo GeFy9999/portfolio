@@ -116,7 +116,7 @@ export const content: Record<Lang, Content> = {
     projects: {
       gymtrack: {
         linkLabel: "gymstrack.com",
-        alt: "Aperçu de l'écran de connexion de GymTrack",
+        alt: "Aperçu de l'application GymTrack",
         points: [
           "Application full-stack de suivi fitness (PWA) hébergée en production sur serveur dédié",
           "Authentification complète (email/mot de passe + Google OAuth), dashboard, recherche parmi 873 exercices, suivi de records personnels",
@@ -125,7 +125,7 @@ export const content: Record<Lang, Content> = {
       },
       gymfox: {
         linkLabel: "gym-fox-app.vercel.app",
-        alt: "Aperçu de la page d'accueil de GymFox",
+        alt: "Aperçu du site GymFox",
         points: [
           "Site e-commerce frontend pour accessoires de gym, déployé sur Vercel",
           "Support PWA avec bannière d'installation, internationalisation partielle (navbar et hero)",
@@ -133,7 +133,7 @@ export const content: Record<Lang, Content> = {
       },
       libeo: {
         linkLabel: "GitHub",
-        alt: "Libéo",
+        alt: "Aperçu de l'application Libéo",
         points: [
           "Application bancaire simulée développée en partenariat avec un collègue (107 commits)",
           "Gestion de profils clients, comptes multiples, virements, paiements, dépôts, assistant IA",
@@ -229,7 +229,7 @@ export const content: Record<Lang, Content> = {
     projects: {
       gymtrack: {
         linkLabel: "gymstrack.com",
-        alt: "Screenshot of GymTrack's sign-in screen",
+        alt: "Preview of the GymTrack app",
         points: [
           "Full-stack fitness tracking application (PWA) hosted in production on a dedicated server",
           "Full authentication (email/password + Google OAuth), dashboard, search across 873 exercises, personal record tracking",
@@ -238,7 +238,7 @@ export const content: Record<Lang, Content> = {
       },
       gymfox: {
         linkLabel: "gym-fox-app.vercel.app",
-        alt: "Screenshot of GymFox's homepage",
+        alt: "Preview of the GymFox site",
         points: [
           "E-commerce frontend for gym accessories, deployed on Vercel",
           "PWA support with install banner, partial internationalization (navbar and hero)",
@@ -246,7 +246,7 @@ export const content: Record<Lang, Content> = {
       },
       libeo: {
         linkLabel: "GitHub",
-        alt: "Libéo",
+        alt: "Preview of the Libéo app",
         points: [
           "Simulated banking application built in partnership with a colleague (107 commits)",
           "Client profile management, multiple accounts, transfers, payments, deposits, AI assistant",

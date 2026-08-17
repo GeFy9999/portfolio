@@ -36,6 +36,22 @@ export function ExternalLinkIcon({ className = "" }: IconProps) {
   );
 }
 
+export function ChevronLeftIcon({ className = "" }: IconProps) {
+  return (
+    <svg className={`${base} ${className}`} viewBox="0 0 24 24" strokeWidth={2}>
+      <path d="M15 18 9 12l6-6" />
+    </svg>
+  );
+}
+
+export function ChevronRightIcon({ className = "" }: IconProps) {
+  return (
+    <svg className={`${base} ${className}`} viewBox="0 0 24 24" strokeWidth={2}>
+      <path d="m9 18 6-6-6-6" />
+    </svg>
+  );
+}
+
 export function BankIcon({ className = "" }: IconProps) {
   return (
     <svg className={`${base} ${className}`} viewBox="0 0 24 24">

@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { useLanguage } from "@/components/LanguageProvider";
 import { Reveal } from "@/components/Reveal";
-import { ExternalLinkIcon, BankIcon } from "@/components/icons";
+import { Carousel } from "@/components/Carousel";
+import { ExternalLinkIcon } from "@/components/icons";
 import { projects } from "@/lib/projects";
 
 export function Projects() {
@@ -22,23 +22,9 @@ export function Projects() {
             return (
               <article
                 key={project.id}
-                className="group bg-card border border-card-border rounded-[14px] overflow-hidden flex flex-col hover:border-accent hover:-translate-y-1 transition-all"
+                className="bg-card border border-card-border rounded-[14px] overflow-hidden flex flex-col hover:border-accent hover:-translate-y-1 transition-all"
               >
-                <div className="h-[170px] flex items-center justify-center overflow-hidden bg-bg-soft">
-                  {project.image ? (
-                    <Image
-                      src={project.image.src}
-                      alt={text.alt}
-                      width={1280}
-                      height={project.id === "gymtrack" ? 620 : 760}
-                      className="w-full h-full object-cover object-top group-hover:scale-[1.04] transition-transform duration-400"
-                    />
-                  ) : (
-                    <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-[#713f12] to-bg">
-                      <BankIcon className="w-[46px] h-[46px] text-amber-400/90" />
-                    </div>
-                  )}
-                </div>
+                <Carousel images={project.images} alt={text.alt} />
                 <div className="p-[22px] flex flex-col gap-3.5 flex-1">
                   <div className="flex items-center justify-between gap-2.5 flex-wrap">
                     <h4 className="text-[1.15rem] font-semibold">{project.name}</h4>
