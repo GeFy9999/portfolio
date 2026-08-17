@@ -73,11 +73,7 @@ export interface Content {
       sending: string;
       success: string;
       error: string;
-      notConfigured: string;
     };
-  };
-  footer: {
-    built: string;
   };
 }
 
@@ -192,11 +188,7 @@ export const content: Record<Lang, Content> = {
         sending: "Envoi en cours...",
         success: "Message envoyé ! Je te réponds dès que possible.",
         error: "Une erreur est survenue. Écris-moi directement à zachary.belley@outlook.com.",
-        notConfigured: "Le formulaire n'est pas encore configuré — écris-moi directement à zachary.belley@outlook.com.",
       },
-    },
-    footer: {
-      built: "Conçu et codé à la main.",
     },
   },
   en: {
@@ -309,11 +301,7 @@ export const content: Record<Lang, Content> = {
         sending: "Sending...",
         success: "Message sent! I'll get back to you as soon as possible.",
         error: "Something went wrong. Email me directly at zachary.belley@outlook.com.",
-        notConfigured: "The form isn't configured yet — email me directly at zachary.belley@outlook.com.",
       },
-    },
-    footer: {
-      built: "Designed and hand-coded.",
     },
   },
 };

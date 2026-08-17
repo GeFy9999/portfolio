@@ -10,7 +10,7 @@ const EMAILJS_PUBLIC_KEY = "VgriXQf3HzUsFXXi4";
 const EMAILJS_SERVICE_ID = "service_kwlorjy";
 const EMAILJS_TEMPLATE_ID = "template_k8aapbi";
 
-type Status = "idle" | "sending" | "success" | "error" | "not-configured";
+type Status = "idle" | "sending" | "success" | "error";
 
 export function Contact() {
   const { t } = useLanguage();
@@ -25,11 +25,6 @@ export function Contact() {
     // Honeypot: bots fill hidden fields, humans never do
     const honeypot = form.elements.namedItem("company") as HTMLInputElement | null;
     if (honeypot?.value) return;
-
-    if (EMAILJS_PUBLIC_KEY === "YOUR_PUBLIC_KEY") {
-      setStatus("not-configured");
-      return;
-    }
 
     setStatus("sending");
     try {
@@ -51,12 +46,9 @@ export function Contact() {
         ? t.contact.form.success
         : status === "error"
           ? t.contact.form.error
-          : status === "not-configured"
-            ? t.contact.form.notConfigured
-            : "";
+          : "";
 
-  const statusClass =
-    status === "success" ? "text-accent" : status === "error" || status === "not-configured" ? "text-red-400" : "";
+  const statusClass = status === "success" ? "text-accent" : status === "error" ? "text-red-400" : "";
 
   return (
     <Reveal>
