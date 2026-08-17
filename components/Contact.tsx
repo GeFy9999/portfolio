@@ -6,9 +6,9 @@ import { useLanguage } from "@/components/LanguageProvider";
 import { Reveal } from "@/components/Reveal";
 import { MailIcon, GithubIcon, PinIcon } from "@/components/icons";
 
-const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY";
-const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";
+const EMAILJS_PUBLIC_KEY = "VgriXQf3HzUsFXXi4";
+const EMAILJS_SERVICE_ID = "service_kwlorjy";
+const EMAILJS_TEMPLATE_ID = "template_k8aapbi";
 
 type Status = "idle" | "sending" | "success" | "error" | "not-configured";
 
