@@ -44,6 +44,12 @@ export const projects: ProjectMeta[] = [
       "/images/libeo/6.jpg",
       "/images/libeo/7.jpg",
       "/images/libeo/8.jpg",
+      "/images/libeo/9.jpg",
+      "/images/libeo/10.jpg",
+      "/images/libeo/11.jpg",
+      "/images/libeo/12.jpg",
+      "/images/libeo/13.jpg",
+      "/images/libeo/14.jpg",
     ],
   },
 ];

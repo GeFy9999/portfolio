@@ -6,6 +6,7 @@ import { useLanguage } from "@/components/LanguageProvider";
 import { Reveal } from "@/components/Reveal";
 import { MailIcon, GithubIcon, PinIcon } from "@/components/icons";
 import type { Content } from "@/lib/content";
+import { isValidEmail } from "@/lib/validateEmail";
 
 const EMAILJS_PUBLIC_KEY = "VgriXQf3HzUsFXXi4";
 const EMAILJS_SERVICE_ID = "service_kwlorjy";
@@ -13,7 +14,6 @@ const EMAILJS_TEMPLATE_ID = "template_k8aapbi";
 
 const COOLDOWN_MS = 30 * 60 * 1000;
 const LAST_SENT_KEY = "portfolio_contact_last_sent";
-const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 type Status = "idle" | "sending" | "error";
 type FormErrors = Partial<Record<"name" | "email" | "message", string>>;
@@ -33,7 +33,7 @@ function validate(form: HTMLFormElement, formText: Content["contact"]["form"]): 
   const errors: FormErrors = {};
   if (!name) errors.name = formText.nameRequired;
   if (!email) errors.email = formText.emailRequired;
-  else if (!EMAIL_RE.test(email)) errors.email = formText.emailInvalid;
+  else if (!isValidEmail(email)) errors.email = formText.emailInvalid;
   if (!message) errors.message = formText.messageRequired;
   else if (message.length < 10) errors.message = formText.messageTooShort;
   return errors;
