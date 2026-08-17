@@ -5,7 +5,6 @@ import { useLanguage } from "@/components/LanguageProvider";
 import { Reveal } from "@/components/Reveal";
 import { ExternalLinkIcon, BankIcon } from "@/components/icons";
 import { projects } from "@/lib/projects";
-import { assetPath } from "@/lib/basePath";
 
 export function Projects() {
   const { t } = useLanguage();
@@ -28,7 +27,7 @@ export function Projects() {
                 <div className="h-[170px] flex items-center justify-center overflow-hidden bg-bg-soft">
                   {project.image ? (
                     <Image
-                      src={assetPath(project.image.src)}
+                      src={project.image.src}
                       alt={text.alt}
                       width={1280}
                       height={project.id === "gymtrack" ? 620 : 760}
