@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zachary Belley — Développeur Full-Stack</title>
+<meta name="description" content="Portfolio de Zachary Belley, développeur full-stack junior spécialisé en React, TypeScript, Node.js et Next.js.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%2322c55e%22>Z</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise"></div>
+
+<header class="nav-wrap">
+  <nav class="nav container">
+    <a href="#top" class="logo">ZB<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about" data-i18n="nav_about">Profil</a></li>
+      <li><a href="#skills" data-i18n="nav_skills">Compétences</a></li>
+      <li><a href="#projects" data-i18n="nav_projects">Projets</a></li>
+      <li><a href="#experience" data-i18n="nav_exp">Parcours</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="langToggle" class="pill-btn" aria-label="Toggle language">EN</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <ul class="nav-links mobile" id="mobileNav">
+    <li><a href="#about" data-i18n="nav_about">Profil</a></li>
+    <li><a href="#skills" data-i18n="nav_skills">Compétences</a></li>
+    <li><a href="#projects" data-i18n="nav_projects">Projets</a></li>
+    <li><a href="#experience" data-i18n="nav_exp">Parcours</a></li>
+    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero container">
+    <p class="eyebrow" data-i18n="hero_eyebrow">// disponible pour un premier emploi en développement</p>
+    <h1>Zachary <span class="accent">Belley</span></h1>
+    <h2 class="role" data-i18n="hero_role">Développeur Full-Stack Junior</h2>
+    <p class="lead" data-i18n="hero_lead">
+      Diplômé en Programmation informatique de La Cité collégiale, spécialisé en React, TypeScript,
+      Node.js et Next.js. J'aime construire des applications complètes, du frontend jusqu'à la base de données,
+      et les déployer en production.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary" data-i18n="hero_cta_projects">Voir mes projets</a>
+      <a href="#contact" class="btn btn-ghost" data-i18n="hero_cta_contact">Me contacter</a>
+    </div>
+    <div class="hero-meta">
+      <span><svg class="icon" viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Gatineau, QC</span>
+      <a href="https://github.com/GeFy9999" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.03a9.4 9.4 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>github.com/GeFy9999</a>
+      <a href="mailto:zachary.belley@outlook.com"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>zachary.belley@outlook.com</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section container">
+    <h3 class="section-title"><span class="tag">01</span><span data-i18n="about_title">Profil</span></h3>
+    <div class="about-grid">
+      <p class="about-text" data-i18n="about_text">
+        Développeur full-stack junior basé à Gatineau, passionné par la construction d'applications web
+        complètes — de l'interface jusqu'à la base de données. Expérience pratique avec des projets réels
+        déployés en production, incluant authentification, PWA, et intégration d'API. Français langue
+        maternelle, anglais intermédiaire.
+      </p>
+      <div class="about-facts">
+        <div class="fact">
+          <span class="fact-num">3</span>
+          <span class="fact-label" data-i18n="fact_projects">projets déployés</span>
+        </div>
+        <div class="fact">
+          <span class="fact-num">107+</span>
+          <span class="fact-label" data-i18n="fact_commits">commits sur Libéo</span>
+        </div>
+        <div class="fact">
+          <span class="fact-num">2026</span>
+          <span class="fact-label" data-i18n="fact_grad">diplômé, La Cité collégiale</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section container">
+    <h3 class="section-title"><span class="tag">02</span><span data-i18n="skills_title">Compétences techniques</span></h3>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h4 data-i18n="skill_frontend">Frontend</h4>
+        <div class="chips">
+          <span>React</span><span>Next.js</span><span>TypeScript</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Tailwind CSS</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4 data-i18n="skill_backend">Backend</h4>
+        <div class="chips">
+          <span>Node.js</span><span>Express.js</span><span>REST API</span><span>Prisma ORM</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4 data-i18n="skill_db">Bases de données</h4>
+        <div class="chips">
+          <span>SQLite</span><span>MongoDB</span><span>Microsoft SQL Server</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4 data-i18n="skill_tools">Outils</h4>
+        <div class="chips">
+          <span>Git</span><span>GitHub</span><span>Jira</span><span>VS Code</span><span>Vite</span><span>PWA</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h4 data-i18n="skill_other">Autres</h4>
+        <div class="chips">
+          <span>Python</span><span>C#</span><span>T-SQL</span><span>Agile/Scrum</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section container">
+    <h3 class="section-title"><span class="tag">03</span><span data-i18n="projects_title">Projets</span></h3>
+
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <div class="project-banner">
+          <img src="assets/gymtrack.jpg" alt="Aperçu de l'écran de connexion de GymTrack" loading="lazy">
+        </div>
+        <div class="project-body">
+          <div class="project-head">
+            <h4>GymTrack</h4>
+            <a href="https://gymstrack.com" target="_blank" rel="noopener" class="project-link">gymstrack.com<svg class="icon-link" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+          </div>
+          <div class="chips small">
+            <span>React</span><span>TypeScript</span><span>Node.js</span><span>Express</span><span>Prisma</span><span>SQLite</span><span>Vite</span>
+          </div>
+          <ul class="project-points" data-i18n-html="proj_gymtrack">
+            <li>Application full-stack de suivi fitness (PWA) hébergée en production sur serveur dédié</li>
+            <li>Authentification complète (email/mot de passe + Google OAuth), dashboard, recherche parmi 873 exercices, suivi de records personnels</li>
+            <li>Page statistiques avec graphique de poids corporel et volume par muscle, workflow Git feat/ → dev → main</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-banner">
+          <img src="assets/gymfox.jpg" alt="Aperçu de la page d'accueil de GymFox" loading="lazy">
+        </div>
+        <div class="project-body">
+          <div class="project-head">
+            <h4>GymFox</h4>
+            <a href="https://gym-fox-app.vercel.app" target="_blank" rel="noopener" class="project-link">gym-fox-app.vercel.app<svg class="icon-link" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+          </div>
+          <div class="chips small">
+            <span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span>
+          </div>
+          <ul class="project-points" data-i18n-html="proj_gymfox">
+            <li>Site e-commerce frontend pour accessoires de gym, déployé sur Vercel</li>
+            <li>Support PWA avec bannière d'installation, internationalisation partielle (navbar et hero)</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-banner banner-3" aria-hidden="true">
+          <svg class="banner-icon" viewBox="0 0 24 24"><path d="M3 10.5 12 4l9 6.5"/><path d="M4.5 10.5V20h15v-9.5"/><path d="M9 20v-6h6v6"/><path d="M3 20h18"/></svg>
+        </div>
+        <div class="project-body">
+          <div class="project-head">
+            <h4>Libéo</h4>
+            <a href="https://github.com/GeFy9999/Gestion-de-banque" target="_blank" rel="noopener" class="project-link">GitHub<svg class="icon-link" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+          </div>
+          <div class="chips small">
+            <span>Next.js 16</span><span>React 19</span><span>Express</span><span>SQLite (sql.js)</span><span>Tailwind</span>
+          </div>
+          <ul class="project-points" data-i18n-html="proj_libeo">
+            <li>Application bancaire simulée développée en partenariat avec un collègue (107 commits)</li>
+            <li>Gestion de profils clients, comptes multiples, virements, paiements, dépôts, assistant IA</li>
+            <li>Responsable du frontend : stylisation, système de design, backlog Jira (8 épiques, 118 sous-tâches)</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section container">
+    <h3 class="section-title"><span class="tag">04</span><span data-i18n="exp_title">Parcours</span></h3>
+
+    <div class="timeline">
+      <div class="timeline-col">
+        <h4 class="timeline-heading" data-i18n="edu_heading">Formation</h4>
+        <div class="timeline-item">
+          <span class="timeline-date">2026</span>
+          <h5 data-i18n="edu_1_title">Diplôme en Programmation informatique</h5>
+          <p class="timeline-sub">La Cité collégiale, Ottawa</p>
+          <p class="timeline-desc" data-i18n="edu_1_desc">Applications web, mobiles et autonomes · Bases de données · IA · Tests logiciels · Agile</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2023</span>
+          <h5 data-i18n="edu_2_title">Diplôme d'études secondaires</h5>
+          <p class="timeline-sub">École secondaire Hormisdas-Gamelin</p>
+        </div>
+      </div>
+
+      <div class="timeline-col">
+        <h4 class="timeline-heading" data-i18n="work_heading">Expérience professionnelle</h4>
+        <div class="timeline-item">
+          <span class="timeline-date" data-i18n="work_1_date">2025 – présent</span>
+          <h5 data-i18n="work_1_title">Service à la clientèle &amp; Approvisionnement</h5>
+          <p class="timeline-sub">IGA</p>
+          <p class="timeline-desc" data-i18n="work_1_desc">Service à la clientèle, livraison et approvisionnement du magasin</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-date">2021 – 2025</span>
+          <h5 data-i18n="work_2_title">Service à la clientèle &amp; Cuisinier</h5>
+          <p class="timeline-sub">Tim Hortons</p>
+          <p class="timeline-desc" data-i18n="work_2_desc">4 ans d'expérience en service à la clientèle et cuisine, ouvertures/fermetures, livraisons</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="languages">
+      <span class="lang-badge"><strong data-i18n="lang_fr">Français</strong> — <span data-i18n="lang_fr_level">langue maternelle</span></span>
+      <span class="lang-badge"><strong data-i18n="lang_en">Anglais</strong> — <span data-i18n="lang_en_level">intermédiaire</span></span>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container contact-section">
+    <h3 class="section-title"><span class="tag">05</span><span data-i18n="contact_title">Contact</span></h3>
+    <p class="contact-lead" data-i18n="contact_lead">
+      Ouvert aux opportunités de premier emploi en développement web. N'hésite pas à me contacter.
+    </p>
+    <div class="contact-cards">
+      <a class="contact-card" href="mailto:zachary.belley@outlook.com">
+        <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>
+        <span>zachary.belley@outlook.com</span>
+      </a>
+      <a class="contact-card" href="https://github.com/GeFy9999" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.03a9.4 9.4 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+        <span>github.com/GeFy9999</span>
+      </a>
+      <div class="contact-card static">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M12 21s-7-6.1-7-11.5A7 7 0 0 1 19 9.5C19 14.9 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span>Gatineau, QC</span>
+      </div>
+    </div>
+
+    <form id="contactForm" class="contact-form" novalidate>
+      <div class="form-row">
+        <label for="cf-name" data-i18n="form_name">Nom</label>
+        <input type="text" id="cf-name" name="from_name" required autocomplete="name">
+      </div>
+      <div class="form-row">
+        <label for="cf-email" data-i18n="form_email">Courriel</label>
+        <input type="email" id="cf-email" name="from_email" required autocomplete="email">
+      </div>
+      <div class="form-row">
+        <label for="cf-message" data-i18n="form_message">Message</label>
+        <textarea id="cf-message" name="message" rows="5" required></textarea>
+      </div>
+      <input type="text" name="company" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button type="submit" class="btn btn-primary form-submit" id="cf-submit">
+        <span data-i18n="form_send">Envoyer le message</span>
+      </button>
+      <p class="form-status" id="cf-status" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Zachary Belley. <span data-i18n="footer_built">Conçu et codé à la main.</span></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
