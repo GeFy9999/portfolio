@@ -73,6 +73,12 @@ export interface Content {
       sending: string;
       success: string;
       error: string;
+      nameRequired: string;
+      emailRequired: string;
+      emailInvalid: string;
+      messageRequired: string;
+      messageTooShort: string;
+      cooldown: string;
     };
   };
 }
@@ -188,6 +194,12 @@ export const content: Record<Lang, Content> = {
         sending: "Envoi en cours...",
         success: "Message envoyé ! Je te réponds dès que possible.",
         error: "Une erreur est survenue. Écris-moi directement à zachary.belley@outlook.com.",
+        nameRequired: "Ton nom est requis.",
+        emailRequired: "Ton courriel est requis.",
+        emailInvalid: "Courriel invalide.",
+        messageRequired: "Un message est requis.",
+        messageTooShort: "Message trop court (10 caractères minimum).",
+        cooldown: "Message envoyé ! Pour m'écrire à nouveau, réessaie dans {time}.",
       },
     },
   },
@@ -301,6 +313,12 @@ export const content: Record<Lang, Content> = {
         sending: "Sending...",
         success: "Message sent! I'll get back to you as soon as possible.",
         error: "Something went wrong. Email me directly at zachary.belley@outlook.com.",
+        nameRequired: "Your name is required.",
+        emailRequired: "Your email is required.",
+        emailInvalid: "Invalid email address.",
+        messageRequired: "A message is required.",
+        messageTooShort: "Message is too short (10 characters minimum).",
+        cooldown: "Message sent! If you'd like to write again, try in {time}.",
       },
     },
   },
