@@ -111,22 +111,42 @@ export const content: Record<Lang, Content> = {
     skills: {
       title: "Compétences techniques",
       groups: [
-        { title: "Frontend", items: ["React", "Next.js", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS"] },
-        { title: "Backend", items: ["Node.js", "Express.js", "REST API", "Prisma ORM"] },
-        { title: "Bases de données", items: ["SQLite", "MongoDB", "Microsoft SQL Server"] },
-        { title: "Outils", items: ["Git", "GitHub", "Jira", "VS Code", "Vite", "PWA"] },
+        {
+          title: "Frontend",
+          items: [
+            "React",
+            "Next.js",
+            "TypeScript",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Tailwind CSS",
+          ],
+        },
+        {
+          title: "Backend",
+          items: ["Node.js", "Express.js", "REST API", "Prisma ORM"],
+        },
+        {
+          title: "Bases de données",
+          items: ["SQLite", "MongoDB", "Microsoft SQL Server"],
+        },
+        {
+          title: "Outils",
+          items: ["Git", "GitHub", "Jira", "VS Code", "Vite", "PWA"],
+        },
         { title: "Autres", items: ["Python", "C#", "T-SQL", "Agile/Scrum"] },
       ],
     },
     projectsTitle: "Projets",
     projects: {
-      gymtrack: {
+      gymtrackv2: {
         linkLabel: "gymstrack.com",
-        alt: "Aperçu de l'application GymTrack",
+        alt: "Aperçu de GymTrack v2",
         points: [
-          "Application full-stack de suivi fitness (PWA) hébergée en production sur serveur dédié",
-          "Authentification complète (email/mot de passe + Google OAuth), dashboard, recherche parmi 873 exercices, suivi de records personnels",
-          "Page statistiques avec graphique de poids corporel et volume par muscle, workflow Git feat/ → dev → main",
+          "Refonte UI complète avec nouveau logo, interface modernisée et états vides repensés avec suggestions d'exercices populaires",
+          "Base d'exercices élargie, ajout manuel de records personnels, conversions lb/kg corrigées avec précision décimale",
+          "Fonction mot de passe oublié par courriel, correction du bug de séances vides enregistrées dans l'historique",
         ],
       },
       gymfox: {
@@ -193,13 +213,15 @@ export const content: Record<Lang, Content> = {
         send: "Envoyer le message",
         sending: "Envoi en cours...",
         success: "Message envoyé ! Je te réponds dès que possible.",
-        error: "Une erreur est survenue. Écris-moi directement à zachary.belley@outlook.com.",
+        error:
+          "Une erreur est survenue. Écris-moi directement à zachary.belley@outlook.com.",
         nameRequired: "Ton nom est requis.",
         emailRequired: "Ton courriel est requis.",
         emailInvalid: "Courriel invalide.",
         messageRequired: "Un message est requis.",
         messageTooShort: "Message trop court (10 caractères minimum).",
-        cooldown: "Message envoyé ! Pour m'écrire à nouveau, réessaie dans {time}.",
+        cooldown:
+          "Message envoyé ! Pour m'écrire à nouveau, réessaie dans {time}.",
       },
     },
   },
@@ -230,22 +252,42 @@ export const content: Record<Lang, Content> = {
     skills: {
       title: "Technical Skills",
       groups: [
-        { title: "Frontend", items: ["React", "Next.js", "TypeScript", "JavaScript", "HTML", "CSS", "Tailwind CSS"] },
-        { title: "Backend", items: ["Node.js", "Express.js", "REST API", "Prisma ORM"] },
-        { title: "Databases", items: ["SQLite", "MongoDB", "Microsoft SQL Server"] },
-        { title: "Tools", items: ["Git", "GitHub", "Jira", "VS Code", "Vite", "PWA"] },
+        {
+          title: "Frontend",
+          items: [
+            "React",
+            "Next.js",
+            "TypeScript",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "Tailwind CSS",
+          ],
+        },
+        {
+          title: "Backend",
+          items: ["Node.js", "Express.js", "REST API", "Prisma ORM"],
+        },
+        {
+          title: "Databases",
+          items: ["SQLite", "MongoDB", "Microsoft SQL Server"],
+        },
+        {
+          title: "Tools",
+          items: ["Git", "GitHub", "Jira", "VS Code", "Vite", "PWA"],
+        },
         { title: "Other", items: ["Python", "C#", "T-SQL", "Agile/Scrum"] },
       ],
     },
     projectsTitle: "Projects",
     projects: {
-      gymtrack: {
+      gymtrackv2: {
         linkLabel: "gymstrack.com",
-        alt: "Preview of the GymTrack app",
+        alt: "Preview of GymTrack v2",
         points: [
-          "Full-stack fitness tracking application (PWA) hosted in production on a dedicated server",
-          "Full authentication (email/password + Google OAuth), dashboard, search across 873 exercises, personal record tracking",
-          "Stats page with body weight chart and volume-per-muscle breakdown, Git workflow feat/ → dev → main",
+          "Complete UI redesign with new logo, modernized interface and improved empty states with popular exercise suggestions",
+          "Expanded exercise database, manual personal record entry, fixed lb/kg conversions with proper decimal precision",
+          "Forgot Password feature via email, fixed empty workout sessions being saved to history",
         ],
       },
       gymfox: {
@@ -312,7 +354,8 @@ export const content: Record<Lang, Content> = {
         send: "Send message",
         sending: "Sending...",
         success: "Message sent! I'll get back to you as soon as possible.",
-        error: "Something went wrong. Email me directly at zachary.belley@outlook.com.",
+        error:
+          "Something went wrong. Email me directly at zachary.belley@outlook.com.",
         nameRequired: "Your name is required.",
         emailRequired: "Your email is required.",
         emailInvalid: "Invalid email address.",

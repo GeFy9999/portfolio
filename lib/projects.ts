@@ -1,5 +1,5 @@
 export interface ProjectMeta {
-  id: "gymtrack" | "gymfox" | "libeo";
+  id: "gymtrackv2" | "gymfox" | "libeo";
   name: string;
   url: string;
   tech: string[];
@@ -8,11 +8,34 @@ export interface ProjectMeta {
 
 export const projects: ProjectMeta[] = [
   {
-    id: "gymtrack",
-    name: "GymTrack",
+    id: "gymtrackv2",
+    name: "GymTrack v2",
     url: "https://gymstrack.com",
-    tech: ["React", "TypeScript", "Node.js", "Express", "Prisma", "SQLite", "Vite"],
-    images: ["/images/gymtrack/1.jpg", "/images/gymtrack/2.jpg", "/images/gymtrack/3.jpg", "/images/gymtrack/4.jpg"],
+    tech: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "Prisma",
+      "PostgreSQL",
+      "Vite",
+    ],
+    images: [
+      "/images/gymtrackv2/Screenshot 2026-08-21 123041.png",
+      "/images/gymtrackv2/Screenshot 2026-08-21 123144.png",
+      "/images/gymtrackv2/Screenshot 2026-08-21 123337.png",
+      "/images/gymtrackv2/Screenshot 2026-08-21 123354.png",
+      "/images/gymtrackv2/Screenshot 2026-08-21 123417.png",
+      "/images/gymtrackv2/Screenshot 2026-08-21 123437.png",
+      "/images/gymtrackv2/Screenshot 2026-08-21 123517.png",
+      "/images/gymtrackv2/Screenshot 2026-08-21 123535.png",
+      "/images/gymtrackv2/Screenshot 2026-08-21 123559.png",
+      "/images/gymtrackv2/Screenshot 2026-08-21 123714.png",
+      "/images/gymtrackv2/Screenshot 2026-08-21 123736.png",
+      "/images/gymtrackv2/Screenshot 2026-08-21 123951.png",
+      "/images/gymtrackv2/Screenshot 2026-08-21 124013.png",
+      "/images/gymtrackv2/Screenshot 2026-08-21 124613.png",
+    ],
   },
   {
     id: "gymfox",
