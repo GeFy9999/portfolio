@@ -103,7 +103,7 @@ export const content: Record<Lang, Content> = {
       title: "Profil",
       text: "Développeur full-stack junior basé à Gatineau, passionné par la construction d'applications web complètes — de l'interface jusqu'à la base de données. Expérience pratique avec des projets réels déployés en production, incluant authentification, PWA, et intégration d'API. Français langue maternelle, anglais intermédiaire.",
       facts: [
-        { num: "3", label: "projets déployés" },
+        { num: "4", label: "projets déployés" },
         { num: "107+", label: "commits sur Libéo" },
         { num: "2026", label: "diplômé, La Cité collégiale" },
       ],
@@ -140,6 +140,15 @@ export const content: Record<Lang, Content> = {
     },
     projectsTitle: "Projets",
     projects: {
+      fornello: {
+        linkLabel: "demo-vitrine-six.vercel.app",
+        alt: "Aperçu du site Fornello",
+        points: [
+          "Site vitrine pour une pizzeria artisanale fictive, avec menu, galerie et système de réservation",
+          "Design responsive soigné avec animations, galerie photo et navigation multi-pages",
+          "Déployé sur Vercel avec Next.js, TypeScript et Tailwind CSS",
+        ],
+      },
       gymtrackv2: {
         linkLabel: "gymstrack.com",
         alt: "Aperçu de GymTrack v2",
@@ -244,7 +253,7 @@ export const content: Record<Lang, Content> = {
       title: "About",
       text: "Junior full-stack developer based in Gatineau, passionate about building complete web applications — from the interface down to the database. Hands-on experience with real projects deployed to production, including authentication, PWAs, and API integration. Native French speaker, intermediate English.",
       facts: [
-        { num: "3", label: "deployed projects" },
+        { num: "4", label: "deployed projects" },
         { num: "107+", label: "commits on Libéo" },
         { num: "2026", label: "graduate, La Cité collégiale" },
       ],
@@ -281,6 +290,15 @@ export const content: Record<Lang, Content> = {
     },
     projectsTitle: "Projects",
     projects: {
+      fornello: {
+        linkLabel: "demo-vitrine-six.vercel.app",
+        alt: "Preview of the Fornello site",
+        points: [
+          "Showcase website for a fictional artisan pizzeria, featuring menu, gallery and reservation system",
+          "Polished responsive design with animations, photo gallery and multi-page navigation",
+          "Deployed on Vercel with Next.js, TypeScript and Tailwind CSS",
+        ],
+      },
       gymtrackv2: {
         linkLabel: "gymstrack.com",
         alt: "Preview of GymTrack v2",

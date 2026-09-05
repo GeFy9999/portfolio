@@ -13,7 +13,9 @@ export function Projects() {
     <Reveal>
       <section id="projects" className="max-w-[1080px] mx-auto px-6 py-[70px]">
         <h3 className="flex items-baseline gap-3.5 text-[1.7rem] font-bold mb-10">
-          <span className="font-mono text-accent text-base border border-card-border rounded-md px-2 py-0.5">03</span>
+          <span className="font-mono text-accent text-base border border-card-border rounded-md px-2 py-0.5">
+            03
+          </span>
           {t.projectsTitle}
         </h3>
         <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-[26px]">
@@ -27,7 +29,9 @@ export function Projects() {
                 <Carousel images={project.images} alt={text.alt} />
                 <div className="p-[22px] flex flex-col gap-3.5 flex-1">
                   <div className="flex items-center justify-between gap-2.5 flex-wrap">
-                    <h4 className="text-[1.15rem] font-semibold">{project.name}</h4>
+                    <h4 className="text-[1.15rem] font-semibold">
+                      {project.name}
+                    </h4>
                     <a
                       href={project.url}
                       target="_blank"

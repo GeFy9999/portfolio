@@ -1,5 +1,5 @@
 export interface ProjectMeta {
-  id: "gymtrackv2" | "gymfox" | "libeo";
+  id: "gymtrackv2" | "gymfox" | "libeo" | "fornello";
   name: string;
   url: string;
   tech: string[];
@@ -7,6 +7,24 @@ export interface ProjectMeta {
 }
 
 export const projects: ProjectMeta[] = [
+  {
+    id: "fornello",
+    name: "Fornello",
+    url: "https://demo-vitrine-six.vercel.app",
+    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+    images: [
+      "/images/fornello/Screenshot 2026-09-04 211705.png",
+      "/images/fornello/Screenshot 2026-09-04 211746.png",
+      "/images/fornello/Screenshot 2026-09-04 211757.png",
+      "/images/fornello/Screenshot 2026-09-04 211806.png",
+      "/images/fornello/Screenshot 2026-09-04 211814.png",
+      "/images/fornello/Screenshot 2026-09-04 211826.png",
+      "/images/fornello/Screenshot 2026-09-04 211838.png",
+      "/images/fornello/Screenshot 2026-09-04 211848.png",
+      "/images/fornello/Screenshot 2026-09-04 211857.png",
+      "/images/fornello/Screenshot 2026-09-04 211909.png",
+    ],
+  },
   {
     id: "gymtrackv2",
     name: "GymTrack v2",
