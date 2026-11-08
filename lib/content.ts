@@ -52,7 +52,18 @@ export interface Content {
     title: string;
     groups: SkillGroup[];
   };
+  promo: {
+    badge: string;
+    text: string;
+    cta: string;
+    watch: string;
+    close: string;
+    modalTitle: string;
+    modalText: string;
+  };
   projectsTitle: string;
+  watchVideo: string;
+  featured: string;
   projects: Record<string, ProjectText>;
   experience: {
     title: string;
@@ -138,7 +149,18 @@ export const content: Record<Lang, Content> = {
         { title: "Autres", items: ["Python", "C#", "T-SQL", "Agile/Scrum"] },
       ],
     },
+    promo: {
+      badge: "Nouveau",
+      text: "GymsTrack est maintenant disponible sur le Google Play Store !",
+      cta: "Télécharger",
+      watch: "Voir la vidéo",
+      close: "Fermer",
+      modalTitle: "GymsTrack",
+      modalText: "Suis tes séances, bats tes records et garde ta série d'entraînement.",
+    },
     projectsTitle: "Projets",
+    watchVideo: "Voir la vidéo",
+    featured: "En vedette",
     projects: {
       fornello: {
         linkLabel: "demo-vitrine-six.vercel.app",
@@ -149,13 +171,13 @@ export const content: Record<Lang, Content> = {
           "Déployé sur Vercel avec Next.js, TypeScript et Tailwind CSS",
         ],
       },
-      gymtrackv2: {
-        linkLabel: "gymstrack.com",
-        alt: "Aperçu de GymTrack v2",
+      gymstrack: {
+        linkLabel: "Google Play",
+        alt: "Aperçu de l'application GymsTrack",
         points: [
-          "Refonte UI complète avec nouveau logo, interface modernisée et états vides repensés avec suggestions d'exercices populaires",
-          "Base d'exercices élargie, ajout manuel de records personnels, conversions lb/kg corrigées avec précision décimale",
-          "Fonction mot de passe oublié par courriel, correction du bug de séances vides enregistrées dans l'historique",
+          "Application d'entraînement maintenant disponible sur le Google Play Store",
+          "Suivi des séances par groupe musculaire, objectif hebdomadaire, série de jours d'entraînement et comparaison avec la séance précédente",
+          "Records personnels (meilleur poids, meilleur volume, 1RM estimé) et records par nombre de répétitions, avec historique et statistiques",
         ],
       },
       gymfox: {
@@ -288,7 +310,18 @@ export const content: Record<Lang, Content> = {
         { title: "Other", items: ["Python", "C#", "T-SQL", "Agile/Scrum"] },
       ],
     },
+    promo: {
+      badge: "New",
+      text: "GymsTrack is now available on the Google Play Store!",
+      cta: "Download",
+      watch: "Watch the video",
+      close: "Close",
+      modalTitle: "GymsTrack",
+      modalText: "Track your workouts, beat your records and keep your streak going.",
+    },
     projectsTitle: "Projects",
+    watchVideo: "Watch the video",
+    featured: "Featured",
     projects: {
       fornello: {
         linkLabel: "demo-vitrine-six.vercel.app",
@@ -299,13 +332,13 @@ export const content: Record<Lang, Content> = {
           "Deployed on Vercel with Next.js, TypeScript and Tailwind CSS",
         ],
       },
-      gymtrackv2: {
-        linkLabel: "gymstrack.com",
-        alt: "Preview of GymTrack v2",
+      gymstrack: {
+        linkLabel: "Google Play",
+        alt: "Preview of the GymsTrack app",
         points: [
-          "Complete UI redesign with new logo, modernized interface and improved empty states with popular exercise suggestions",
-          "Expanded exercise database, manual personal record entry, fixed lb/kg conversions with proper decimal precision",
-          "Forgot Password feature via email, fixed empty workout sessions being saved to history",
+          "Workout tracking app, now available on the Google Play Store",
+          "Session tracking by muscle group, weekly goal, training streak and comparison with your previous session",
+          "Personal records (best weight, best volume, estimated 1RM) and records by rep count, with history and stats",
         ],
       },
       gymfox: {

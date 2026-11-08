@@ -62,3 +62,11 @@ export function BankIcon({ className = "" }: IconProps) {
     </svg>
   );
 }
+
+export function PlayStoreIcon({ className = "" }: IconProps) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M4.5 2.8a1 1 0 0 1 1.04-.05l14.4 8.37a1 1 0 0 1 0 1.73L5.54 21.2A1 1 0 0 1 4 20.34V3.66a1 1 0 0 1 .5-.86Z" />
+    </svg>
+  );
+}

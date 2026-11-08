@@ -1,4 +1,5 @@
 import { Nav } from "@/components/Nav";
+import { PromoBanner } from "@/components/PromoBanner";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { Skills } from "@/components/Skills";
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <>
       <div className="fixed inset-0 pointer-events-none z-0 bg-noise" />
+      <PromoBanner />
       <Nav />
       <main className="relative z-10">
         <Hero />

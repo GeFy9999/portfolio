@@ -1,12 +1,49 @@
+export const GYMSTRACK_PLAY_STORE_URL =
+  "https://play.google.com/store/apps/details?id=com.gymstrack.app";
+export const GYMSTRACK_VIDEO = "/images/GymsTrack V3/gymstrack-ad-en.mp4";
+
 export interface ProjectMeta {
-  id: "gymtrackv2" | "gymfox" | "libeo" | "fornello";
+  id: "gymstrack" | "gymfox" | "libeo" | "fornello";
   name: string;
   url: string;
   tech: string[];
   images: string[];
+  video?: string;
+  github?: string;
+  featured?: boolean;
 }
 
 export const projects: ProjectMeta[] = [
+  {
+    id: "gymstrack",
+    name: "GymsTrack",
+    url: GYMSTRACK_PLAY_STORE_URL,
+    tech: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "Prisma",
+      "PostgreSQL",
+      "Android",
+    ],
+    github: "https://github.com/GeFy9999/gym-track-v1",
+    featured: true,
+    video: GYMSTRACK_VIDEO,
+    images: [
+      "/images/GymsTrack V3/gymstrack-banner-en-1024x500.png",
+      "/images/GymsTrack V3/Screenshot 2026-10-06 001838.png",
+      "/images/GymsTrack V3/Screenshot 2026-10-06 001905.png",
+      "/images/GymsTrack V3/Screenshot 2026-10-06 001931.png",
+      "/images/GymsTrack V3/Screenshot 2026-10-06 001948.png",
+      "/images/GymsTrack V3/Screenshot 2026-10-06 002004.png",
+      "/images/GymsTrack V3/Screenshot 2026-10-06 002035.png",
+      "/images/GymsTrack V3/Screenshot 2026-10-06 002051.png",
+      "/images/GymsTrack V3/Screenshot 2026-10-06 002106.png",
+      "/images/GymsTrack V3/Screenshot 2026-10-06 002119.png",
+      "/images/GymsTrack V3/Screenshot 2026-10-06 002131.png",
+    ],
+  },
   {
     id: "fornello",
     name: "Fornello",
@@ -23,36 +60,6 @@ export const projects: ProjectMeta[] = [
       "/images/fornello/Screenshot 2026-09-04 211848.png",
       "/images/fornello/Screenshot 2026-09-04 211857.png",
       "/images/fornello/Screenshot 2026-09-04 211909.png",
-    ],
-  },
-  {
-    id: "gymtrackv2",
-    name: "GymTrack v2",
-    url: "https://gymstrack.com",
-    tech: [
-      "React",
-      "TypeScript",
-      "Node.js",
-      "Express",
-      "Prisma",
-      "PostgreSQL",
-      "Vite",
-    ],
-    images: [
-      "/images/gymtrackv2/Screenshot 2026-08-21 123041.png",
-      "/images/gymtrackv2/Screenshot 2026-08-21 123144.png",
-      "/images/gymtrackv2/Screenshot 2026-08-21 123337.png",
-      "/images/gymtrackv2/Screenshot 2026-08-21 123354.png",
-      "/images/gymtrackv2/Screenshot 2026-08-21 123417.png",
-      "/images/gymtrackv2/Screenshot 2026-08-21 123437.png",
-      "/images/gymtrackv2/Screenshot 2026-08-21 123517.png",
-      "/images/gymtrackv2/Screenshot 2026-08-21 123535.png",
-      "/images/gymtrackv2/Screenshot 2026-08-21 123559.png",
-      "/images/gymtrackv2/Screenshot 2026-08-21 123714.png",
-      "/images/gymtrackv2/Screenshot 2026-08-21 123736.png",
-      "/images/gymtrackv2/Screenshot 2026-08-21 123951.png",
-      "/images/gymtrackv2/Screenshot 2026-08-21 124013.png",
-      "/images/gymtrackv2/Screenshot 2026-08-21 124613.png",
     ],
   },
   {
